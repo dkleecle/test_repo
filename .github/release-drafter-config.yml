@@ -1,0 +1,26 @@
+name-template: 'v$RESOLVED_VERSION Release Note'
+tag-template: 'v$RESOLVED_VERSION'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## What’s Changed
+  
+  $CHANGES
+  
+  ## Background
+  > _List related issues._
+  - 
+
+  ## Contributors
+
+  $CONTRIBUTORS
+no-changes-template: 'There is no changes.'
